@@ -124,11 +124,11 @@ public class MainActivity extends AppCompatActivity {
         adb.setCancelable(false);
         adb.setTitle("EditText Widget");
         final EditText eT=new EditText(this);
+        eT.setHint("Type text here");
         adb.setView(eT);
         adb.setPositiveButton("Copy", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                eT.setHint("Type text here");
                 String str = eT.getText().toString();
                 Toast.makeText(MainActivity.this, str, Toast.LENGTH_SHORT).show();
             }
