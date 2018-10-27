@@ -128,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
         adb.setPositiveButton("Copy", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+                eT.setHint("Type text here");
                 String str = eT.getText().toString();
                 Toast.makeText(MainActivity.this, str, Toast.LENGTH_SHORT).show();
             }
