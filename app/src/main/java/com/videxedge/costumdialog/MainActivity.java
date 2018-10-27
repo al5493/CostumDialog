@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, str, Toast.LENGTH_SHORT).show();
             }
         });
-        adb.setNeutralButton("Close", new DialogInterface.OnClickListener() {
+        adb.setNeutralButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
